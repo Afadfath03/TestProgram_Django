@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{{ title }}</title>
+		<style>
+			body { margin:0; background:#f5f3f0; }
+			#header { float:left; width:100%; background:#AB72C0; color:#ffffff; padding:10px 0;
+						font-size:14px; 
+			}
+			#header a { text-decoration:none; padding-right:20px; color:#ffffff; font-size:12px;  }
+			#menu { float:left; width:100%; text-align:left; margin-left:10%; }
+			#img-slider { float:left; width:100%; height:300px; border:solid 1px #CBA1D2; margin:5px 0; overflow:hidden; }
+			#content { float:left; margin:0 10%; min-height:500px; width:78%; }
+			#product { float:left; width:100%; }
+			#prod-box { float:left; width:200px; height:250px; background:#ffffff; margin:5px; text-align:center; }
+			#footer { float:left; width:100%; background:#CBA1D2; color:#ffffff; padding:10px 0; text-align:center; color:#ffffff; }
+		</style>
+    </head>
+	
+	<body>
+		<div id="body">
+			<div id="header">
+				<div style="float:left;width:8%;margin-left:10%;">
+				<img src="https://diamon.ittelkom-pwt.ac.id/wp-content/uploads/sites/60/2021/09/igracias.png" style="float:left;width:80px;margin-left:10%;">
+				</div>
+				<div style="float:left;padding-top:15px;">
+				<span style="font-size:26px">knalpotori.id</span> <br> Original Exhaust <br><br>
+				</div>
+				<div id="menu">
+					<a href="/knalpotori/">beranda</a> 
+					<a href="/knalpotori/mobil">mobil</a> 
+					<a href="/knalpotori/motor">motor</a>
+					<a href="/knalpotori/aksesoris">aksesoris</a>
+					<a href="/knalpotori/komunitas">komunitas</a>
+					<a href="/knalpotori/event">event</a>
+					<a href="/knalpotori/login">login</a>
+				</div>
+			</div>
+			
+			<div id="content">
+				<div id="img-slider">
+					<img src="https://i0.wp.com/pmb.ittelkom-pwt.ac.id/wp-content/uploads/2019/04/004.jpg" style="width:100%;">
+				</div>
+			
+				<div id="product">
+					{% for i in product_list  %}
+					<div id="prod-box"><img src="{{ img_product }}" width="200"> <br>{{ product_name }} {{ i }} </div>
+					{% endfor %}
+				</div>
+			</div>
+			
+			<div id="footer">
+				Copyright &#169; 2023 , Pemrograman 1
+			</div>
+		</div>
+	</body>
+
+</html>
