@@ -35,3 +35,15 @@ def index (request):
 def login(request):
     context = {}
     return render(request, 'login.html', context)
+
+def mobil(request):
+    context = {}
+    return render(request, 'login.html', context)
+
+def motor(request):
+    context = {}
+    return render(request, 'login.html', context)
+
+def aksesoris(request):
+    context = {}
+    return render(request, 'login.html', context)
