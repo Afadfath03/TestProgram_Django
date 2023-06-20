@@ -1,0 +1,16 @@
+{% load static %}
+{% include 'header.html' %}
+	
+	<div id="content">
+		<div id="product">
+			<div style="font-size:30px;color:#AB72C0;width:100%;padding:10px 0;" >{{ product_name }}</div>
+
+			{% for i in product_list  %}
+			<div id="prod-box">
+				<a href="/knalpotori/detail/"><img src="{% static img_product %}" width="200"></a> <br>
+				{{ product_name }} {{ i }} </div>
+			{% endfor %}
+		</div>
+	</div>
+	
+{% include 'footer.html' %}

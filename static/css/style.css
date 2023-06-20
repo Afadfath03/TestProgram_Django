@@ -1,0 +1,17 @@
+body { margin:0; background:#f5f3f0; font-family: Arial, Helvetica, sans-serif; }
+#header { float:left; width:100%; background:#AB72C0; color:#ffffff; padding:10px 0; font-size:14px; }
+#header a { text-decoration:none; padding-right:20px; color:#ffffff; font-size:12px;  }
+#header img { float:left;width:15%; }
+#width-90 { float:left;margin-left:10%;width:85%; }
+#menu { float:left;text-align:left; margin-left:10%; }
+#img-slider { float:left; width:100%; height:300px; border:solid 1px #CBA1D2; margin:5px 0; overflow:hidden; }
+#content { float:left; margin:0 10%; min-height:500px; width:78%; }
+#product { float:left; width:100%; }
+#prod-box { float:left; width:200px; height:250px; background:#ffffff; margin:5px; text-align:center; }
+#footer { float:left; width:100%; background:#CBA1D2; color:#ffffff; padding:10px 0; text-align:center; color:#ffffff; }
+.button { background:#CBA1D2;padding:8px 20px;border:none;color:#ffffff;border-radius:5px;cursor:pointer; }
+#detail-box { float:left; width:100%; min-height:350px; background:#ffffff; margin:5px; }
+.detail-left { float:left; width:30%; } 
+.detail-left img { width:100%; }
+.detail-right { float:left; width:60%;padding:5px 4%; } 
+		

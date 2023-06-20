@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+        <title>{{ title }}</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    </head>
+	
+	<body>
+		<div id="body">
+			<div id="header">
+
+				<div id="width-90">
+				<img src="{% static 'img/logo.png' %}">
+				</div>
+
+				<div id="menu">
+					<a href="/knalpotori/">Beranda</a> 
+					<a href="/knalpotori/mobil">mobil</a> 
+					<a href="/knalpotori/motor">motor</a>
+					<a href="/knalpotori/aksesoris">aksesoris</a>
+					<a href="/knalpotori/login">login</a>
+				</div> 
+			</div>
