@@ -1,0 +1,18 @@
+{% load static %}
+{% include 'header.html' %}
+	
+	<div id="content">
+		<center>
+			<img src="{% static 'img/logo.png' %}" style="width:200px;margin-top:50px;">
+			<form method="post">
+				{% csrf_token %} 
+				<input type="text" name="fullname" placeholder="Nama Lengkap" class="form-text" required> <br><br>
+				<input type="email" name="email" placeholder="email"  class="form-text" required> <br><br>
+				<input type="password" name="password" placeholder="password"  class="form-text" required><br><br>
+				<input type="submit" name="submit" value="Daftar" class="button">
+			</form>
+			<br><br>
+		</center>
+	</div> 
+	
+{% include 'footer.html' %}
